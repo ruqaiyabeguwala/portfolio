@@ -1,0 +1,136 @@
+import MDXContentWrapper from "@/components/UI/MDX/MDXContentWrapper";
+import TitleContent from "@/components/UI/MDX/TitleContent";
+
+<MDXContentWrapper>
+  <TitleContent title="Bakit Ko Ito Ginawa">
+    Sa totoo lang, gipit ako noon—at sawa na akong hindi alam kung saan napupunta ang pera ko. Bawat buwan parang misteryo. Isang araw may pera ako, kinabukasan nagluluto na lang ako ng instant noodles habang nagtataka, “saan na naman napunta ‘yung pera ko?”  
+    <br />
+    Kailangan ko ng paraan para masubaybayan ‘yung gastos ko, pero halos lahat ng app na sinubukan ko—sobrang komplikado o mukha pang gawa noong 2010.  
+    <br />
+    Kaya naisip ko, bakit hindi ko na lang gawin ‘yung sarili kong app? At saka gusto ko ring i-level up ‘yung React skills ko at gumawa ng totoong bagay na magagamit ko araw-araw. Hindi lang basta todo app o weather widget, kundi ‘yung may tunay na solusyon sa problema ko. Kung gugugol ako ng ilang linggo rito, dapat sulit.
+  </TitleContent>
+
+<TitleContent title="Pagtalo sa Procrastination (O Pagsubok Man Lang)">
+  Aminin ko—ang dami kong beses na nag-procrastinate noong una. Bubuksan ko ang
+  VS Code, tititig sa screen, tapos maya-maya, nakatatlong YouTube video na ako
+  tungkol sa kung anu-anong walang kinalaman.
+  <br />
+  Nagsimulang magbago nang itigil kong piliting buuin lahat nang sabay-sabay.
+  <br />
+  Sa halip na isipin na “kailangan kong gumawa ng finance app,” hinati ko sa
+  maliliit na gawain: ngayong araw, isang button lang muna ang papaganahin.
+  Bukas, isang form naman. Ganun lang. Maliliit na panalo, pero ‘yun ang
+  nagtulak sa’kin para magpatuloy.
+  <br />
+  Gumamit din ako ng Pomodoro technique—25 minutong focus, tapos pahinga. Hindi
+  ka makakapag-procrastinate kung 25 minuto lang naman ang kailangan mong ituon,
+  ‘di ba?
+  <br />
+  Isa pa, lagi kong bukas ‘yung project ko. Kahit hindi ako nagko-code, basta
+  nakikita ko ‘yung terminal at editor, mas madali akong bumalik sa momentum.
+  Walang abala, walang “teka, i-setup ko muna” na palusot.
+</TitleContent>
+
+<TitleContent title="tRPC Laban sa Server Actions: Ang Type Safety Rabbit Hole">
+  Dito na naging interesante ang lahat. May server actions na ang Next.js 15,
+  kaya ‘yun muna ang sinubukan ko. Ayos naman sa mga simpleng gawain, pero
+  kalaunan nagsulputan ang mga problema: hindi pantay na error handling, walang
+  sentrong lugar para sa API logic, at parang maluwag masyado ang type safety.
+  <br />
+  Hanggang sa natuklasan ko ang [tRPC](https://trpc.io/). Game-changer. Full
+  TypeScript support mula frontend hanggang backend—hindi mo na kailangang
+  ulitin ang API types. Kapag may binago ako sa server, agad na akong
+  pinapagalitan ng TypeScript sa client. Wala nang runtime surprises, wala na
+  ‘yung “undefined is not a function” sa disoras ng gabi.
+  <br />
+  Bukod pa rito, may middleware si tRPC para sa authentication at error
+  handling. Isang lugar lang para sa auth, isang lugar para sa errors. Mas
+  malinis kaysa sa kalat-kalat na server actions. Sobra ba siya? Baka. Pero
+  nailigtas ako nito sa debugging hell? Oo, walang duda.
+</TitleContent>
+
+<TitleContent title="Clean Architecture: Hindi Lang Basta Buzzword">
+  Sobra akong naglaan ng oras sa panonood ng mga YouTube video tungkol sa clean
+  architecture bago ko talaga siya naintindihan. Lahat sinasabi “separation of
+  concerns” at “dependency inversion,” pero walang nagsasabi kung paano ‘yun sa
+  totoong proyekto.
+  <br />
+  Eto kung paano ko ginawa: hinati ko ang buong app sa mga layer. Sa core
+  folder, nandun lahat ng business logic—mga use case tulad ng “create a budget”
+  o “delete a transaction.” Wala silang pakialam sa Firebase o React; sinasabi
+  lang nila kung ano ang kailangang mangyari.
+  <br />
+  Sa data layer naman, nandun lahat ng database stuff. ‘Yung repositories kausap
+  ang Firebase, datasources ang gumagawa ng queries, at mappers ang
+  nagko-convert ng database models papunta sa malinis na DTOs. Kung gusto kong
+  lumipat sa Postgres, ‘tong layer lang ang babaguhin ko. Wala nang ibang
+  gagalawin.
+  <br />
+  Sa huli, presentation layer—lahat ng React components. UI lang sila, walang
+  alam sa Firebase o sa business rules. Tumatawag sila ng hooks, ang hooks sa
+  tRPC, ang tRPC sa use cases, tapos ‘yung use cases sa repositories. Malinis
+  ang flow, madaling i-test.
+  <br />
+  Kailangan ba talaga ‘to para sa personal project? Siguro hindi. Pero napilitan
+  akong maging maayos sa structure, at sobrang dali ng debugging dahil dito. At
+  siyempre, maganda rin tingnan sa portfolio.
+</TitleContent>
+
+<TitleContent title="Design Patterns na Talagang May Silbi">
+  Marami akong ginamit na pattern, pero ‘yung pinaka-nag-click sa’kin ay ang
+  **compound components**. Nakakasawa na kasi ‘yung sampung props kada dialog o
+  modal. Kaya gumawa ako ng `Dialog` na ganito gamitin: `Dialog.Trigger`,
+  `Dialog.Content`, `Dialog.Title`. Malinis, madaling basahin, at customizable.
+  <br />
+  Ginamit ko rin nang husto ang **repository pattern**. Bawat data source
+  (budgets, transactions, pots) may sariling repository. Dahil dito, maayos at
+  modular ang code ko—madaling i-test kasi puwede kong i-mock ang repositories
+  nang hindi kinakalikot ang database.
+  <br />
+  Isa pa, malaking tulong din ang **dependency injection**. Sa halip na gumawa
+  mismo ng repository sa loob ng use case, tinatanggap nila ito bilang
+  parameter. Parang komplikado pakinggan, pero simple lang—madali kong mapalitan
+  o matest nang hindi kailangan isetup ang Firebase bawat oras.
+</TitleContent>
+
+<TitleContent title="Ang Totoong Natutunan Ko">
+  Pinakamalaking aral? Mahalaga ang architecture, kahit sa maliliit na proyekto.
+  Dahil maayos na ang structure mula umpisa, sobrang dali magdagdag ng bagong
+  features. Alam ko agad kung saan dapat ilagay ang code.
+  <br />
+  Dati, inis na inis ako sa TypeScript—gusto ko na lang mag-`any` sa lahat. Pero
+  kalaunan, napagtanto kong ‘yung mga type error pala, sila ‘yung sumasalo sa
+  mga bug bago pa tumakbo ang app. Worth it talaga ‘yung dagdag na pagta-type.
+  <br />
+  Natutunan ko rin na hindi lang para sa malalaking kumpanya ang compound
+  components at design patterns. Mas nababasa at napapanatili ang code, at
+  malaking bagay ‘yun kapag bumalik ka sa project mo matapos ang isang linggo at
+  nagtataka ka na kung anong iniisip mo noon.
+  <br />
+  At oo, importante talaga ang performance. Kailangan kong pag-aralan ‘yung
+  Next.js server-side rendering, kailan gagamit ng client vs server components,
+  at paano i-optimize ang images at fonts. Ramdam ng users kapag mabagal ang app
+  mo, kahit gaano pa kaganda.
+</TitleContent>
+
+<TitleContent title="Ang Tunay na MVP Features">
+  Ang paggawa ng transaction filtering—nakakagulat na satisfying. ‘Yung
+  kakayahang maghanap, mag-filter base sa category, at mag-sort ayon sa petsa,
+  doon lang talaga naging kapaki-pakinabang ang app. Dati, nag-iipon lang ito ng
+  data na halos imposibleng hanapin.
+  <br />
+  Isa pa, ‘yung budget tracking na may visual progress bars—panalo ‘yun. ‘Yung
+  makita mong napupuno ‘yung pulang bar kapag lumalagpas ka sa budget?
+  Nakakatakot pero motivating. Napapaisip tuloy ako bago bumili ng kung ano-ano.
+</TitleContent>
+
+  <TitleContent title="Gagawin Ko Ba Uli Ito?">
+    Oo naman—pero may mga babaguhin ako. Mas kakaunti siguro ang oras sa overthinking ng architecture sa simula, at mas tutok sa pagpapagana ng mga features. At sana, mula umpisa pa lang, may testing na agad. Ang sakit nung idinagdag ko lang sa dulo.  
+    <br />
+    Pero sa kabuuan, mas marami akong natutunan sa paggawa ng Finora kaysa sa kahit anong tutorial. Bawat bug na inayos ko, bawat pattern na natutunan ko, bawat “bakit ayaw gumana ‘to?” na sandali—lahat ‘yun, naging dahilan para gumaling ako bilang developer.  
+    <br />
+    At higit sa lahat, ginagamit ko na ngayon ‘yung app. Mas maayos na ang pera ko.  
+    <br />
+    Kung iniisip mong gumawa ng sarili mong project, simulan mo na lang. Huwag hintaying alam mo na lahat. Matututo ka habang ginagawa mo, at sa totoo lang—doon talaga nagsisimula ang lahat.
+  </TitleContent>
+</MDXContentWrapper>

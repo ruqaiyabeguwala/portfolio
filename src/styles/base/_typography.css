@@ -1,0 +1,16 @@
+@layer base {
+  html {
+    @apply motion-safe:scroll-smooth;
+  }
+  body {
+    @apply font-lexend
+      text-fg-primary
+      bg-bg-primary
+      motion-safe:scroll-smooth;
+  }
+
+  p,
+  li {
+    @apply leading-paragraph;
+  }
+}

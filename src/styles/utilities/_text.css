@@ -1,0 +1,23 @@
+@utility text-decor {
+  @apply font-oswald from-bg-card -z-10 bg-gradient-to-r from-[40rem] to-transparent bg-clip-text font-black whitespace-nowrap text-transparent uppercase;
+
+  -webkit-text-stroke: 0.25rem currentColor;
+}
+
+@utility leading-paragraph {
+  @apply leading-[1.6] 
+  sm:leading-[1.7] 
+  md:leading-[1.9];
+}
+
+@utility subheading {
+  @apply font-oswald 
+  text-fg-secondary 
+  text-2xl 
+  font-semibold 
+  lg:text-3xl;
+}
+
+@utility inline-link {
+  @apply text-fg-tertiary hover:text-accent transition-colors;
+}

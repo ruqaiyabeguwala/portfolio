@@ -1,0 +1,140 @@
+import MDXContentWrapper from "@/components/UI/MDX/MDXContentWrapper";
+import TitleContent from "@/components/UI/MDX/TitleContent";
+
+<MDXContentWrapper>
+  <TitleContent title="Why I Built This">
+    Honestly, I was broke and tired of not knowing where my money went. Every
+    month felt like a mystery, one day I had cash, the next day I was eating
+    instant noodles wondering what happened. I needed something to track my
+    finances, but every app I tried was either too complicated or looked like it
+    was designed in 2010.
+    <br />
+    So I figured, why not build my own? Plus, I wanted to level up my React
+    skills and actually build something real that I'd use every day. Not just
+    another todo app or weather widget, something that actually solved a problem
+    I had. If I was going to spend weeks on this, it better be worth it.
+  </TitleContent>
+
+<TitleContent title="Beating Procrastination (Or Trying To)">
+  Let me be real, I procrastinated a lot at first. I'd open VS Code, stare at
+  the screen, then suddenly I'm three YouTube videos deep about some random
+  topic. The breakthrough came when I stopped trying to build everything at
+  once.
+  <br />
+  Instead of thinking "I need to build a finance app," I broke it down: today, I
+  just need to make one button work. Tomorrow, one form. That's it. Small wins
+  kept me going. I also started working in 25-minute blocks using the Pomodoro
+  technique. Can't procrastinate if you only need to focus for 25 minutes,
+  right?
+  <br />
+  Another thing that helped was having my project open all the time. Even if I
+  wasn't coding, just seeing the terminal and editor made it easier to jump back
+  in. No friction, no "let me set everything up first" excuses.
+</TitleContent>
+
+<TitleContent title="tRPC Over Server Actions: The Type Safety Rabbit Hole">
+  Here's where things get interesting. Next.js 15 has server actions, and I
+  tried them first. They work fine for simple stuff. But then I started running
+  into issues: inconsistent error handling, no centralized way to manage my API
+  logic, and the type safety felt... loose.
+  <br />
+  Then I discovered [tRPC](https://trpc.io/). This thing changed the game. Full
+  TypeScript support from frontend to backend. No need to write API types twice.
+  If I changed something on the server, TypeScript would yell at me on the
+  client immediately. No runtime surprises, no "undefined is not a function"
+  errors at 2am.
+  <br />
+  Plus, tRPC gave me middleware for authentication and error handling. One place
+  to handle auth, one place to catch errors, way cleaner than spreading that
+  logic across a bunch of server actions. Was it overkill? Maybe. But did it
+  save me from debugging hell later? Absolutely.
+</TitleContent>
+
+<TitleContent title="Clean Architecture: Not Just a Buzzword">
+  I spent way too much time watching YouTube videos about clean architecture
+  before I actually understood it. Everyone talks about "separation of concerns"
+  and "dependency inversion" but nobody tells you what that actually looks like
+  in a real project.
+  <br />
+  Here's how I did it: I split everything into layers. The core folder has all
+  my business logic, use cases like "create a budget" or "delete a transaction."
+  These don't care about Firebase or React. They just say "here's what needs to
+  happen."
+  <br />
+  Then the data layer handles all the database stuff. Repositories talk to
+  Firebase, layer handles all the database stuff. Repositories talk to Firebase,
+  datasources do the actual queries, and mappers convert database models to
+  clean DTOs. If I ever wanted to switch from Firebase to Postgres, I'd only
+  need to change this layer. The rest of the app wouldn't care.
+  <br />
+  Finally, presentation is all my React components. They're just UI, they don't
+  know about Firebase or business rules. They call hooks, hooks call tRPC, tRPC
+  calls use cases, use cases call repositories. Clean flow, testable code.
+  <br />
+  Was this necessary for a personal project? Probably not. But it forced me to
+  think about structure and made debugging way easier. Plus, it looks impressive
+  on my portfolio.
+</TitleContent>
+
+<TitleContent title="Design Patterns That Actually Made Sense">
+  I used a bunch of patterns, but the one that clicked for me was **compound
+  components**. I got tired of passing ten props to every dialog or modal. So I
+  built components like `Dialog` where you use it like this: `Dialog.Trigger`,
+  `Dialog.Content`, `Dialog.Title`. Clean, readable, and easy to customize.
+  <br />
+  I also used the **repository pattern** heavily. Every data source (budgets,
+  transactions, pots) has its own repository. This kept my code organized and
+  made testing way easier since I could mock repositories without touching the
+  actual database.
+  <br />
+  **Dependency injection** was another big one. My use cases receive
+  repositories as parameters instead of creating them directly. Sounds fancy,
+  but it just means I can swap implementations easily and test things without
+  setting up Firebase every time.
+</TitleContent>
+
+<TitleContent title="What I Actually Learned">
+  The biggest lesson? Architecture matters, even for small projects. Having a
+  clear structure from day one made adding features way easier. Every time I
+  needed something new, I knew exactly where the code should go.
+  <br />
+  TypeScript went from annoying to essential. Early on, I'd fight with type
+  errors and want to slap `any` everywhere. By the end, those type errors were
+  catching bugs before I even ran the app. The safety net was worth the extra
+  typing.
+  <br />
+  I also learned that compound components and design patterns aren't just for
+  big companies. They make your code easier to read and maintain, which is huge
+  when you come back to your project after a week and have no idea what past-you
+  was thinking.
+  <br />
+  Performance actually matters. I had to learn about Next.js server-side
+  rendering, when to use client components versus server components, and how to
+  optimize images and fonts. Users can tell when your app is slow, even if it
+  looks nice.
+</TitleContent>
+
+<TitleContent title="The Real MVP Features">
+  Building the transaction filtering was surprisingly satisfying. Being able to
+  search, filter by category, and sort by date made the app actually useful.
+  Before that, it was just storing data with no good way to find anything.
+  <br />
+  The budget tracking with visual progress bars was another win. Seeing that red
+  bar fill up when you're overspending? That's motivating in a scary way. Made
+  me actually think twice before buying stuff I didn't need.
+</TitleContent>
+
+  <TitleContent title="Would I Do It Again?">
+    Yeah, but with some changes. I'd spend less time overthinking architecture at
+    the start and more time shipping features. I'd also set up testing from day
+    one instead of adding it later, that was painful.
+    <br />
+    But overall, building Finora taught me more than any tutorial ever could.
+    Every bug I fixed, every pattern I learned, every "why isn't this working?"
+    moment made me a better developer. Plus, I actually use the app now, and my
+    finances are way less of a mess.
+    <br />
+    If you're thinking about building something, just start. Don't wait until you
+    know everything. You'll figure it out as you go, and that's the whole point.
+  </TitleContent>
+</MDXContentWrapper>

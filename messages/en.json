@@ -1,0 +1,363 @@
+{
+  "info": {
+    "name": "Simon Camacho",
+    "title": "Software Engineer",
+    "location": "Pampanga, Philippines",
+    "description": "I am a developer who enjoys learning and expanding knowledge in the field of web. I am also determined to create solutions that provide excellent online experiences. Explore my portfolio to see my growing skills and dedication to quality development.",
+    "siteName": "Simon Camacho Portfolio"
+  },
+  "containers": {
+    "navBar": {
+      "controls": {
+        "toggle": "Toggle navigation menu"
+      },
+      "mobileMenu": {
+        "title": "Navigation Menu",
+        "description": "Browse through the main sections of the site.",
+        "close": "Close mobile menu",
+        "avatar": "Mobile Nav Avatar"
+      },
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "connect": "Connect"
+      }
+    }
+  },
+  "common": {
+    "openToWork": "Open to work",
+    "mainNavigation": "Main navigation",
+    "navigateToHome": "Navigate to Home",
+    "navigateToSection": "Navigate to {section} section",
+    "imageAltPostText": {
+      "screenshot": "Screenshot of {name}",
+      "logo": "Logo of {name}"
+    },
+    "languageDropdown": {
+      "label": "Choose Language"
+    },
+    "themeToggle": {
+      "darkMode": "Toggle Dark Mode",
+      "lightMode": "Toggle Light Mode"
+    },
+    "chatButton": {
+      "open": "Open chat"
+    },
+    "socialLinks": {
+      "reddit": "Visit my Reddit profile",
+      "frontendmentor": "Visit my Frontend Mentor profile",
+      "github": "Visit my GitHub",
+      "linkedin": "Visit my LinkedIn profile",
+      "email": "Send me an email"
+    },
+    "skipToContentButton": {
+      "open": "Skip to content"
+    },
+    "backButtonLabel": "Back",
+    "or": "or"
+  },
+  "heroSection": {
+    "contact": "Contact",
+    "resume": "Resume",
+    "backgroundCarlos": "Carlos",
+    "backgroundSimon": "Simon",
+    "heroImageAlt": "Hero Image"
+  },
+  "aboutSection": {
+    "title": "About Me",
+    "journeyHeader": "My Journey",
+    "journey": "Hi! I’m Simon. My coding journey started in 2018 when I came across a YouTube video of someone making <tetrisLink>Tetris in C++</tetrisLink>. I was 16, and it blew my mind—you could actually build games from scratch. That moment pulled me into hours of tutorials, trying to recreate classics like Snake and Frogger.<br></br><br></br>One of my proudest moments at work was learning how to set up payments and then watching strangers actually use—and pay for—something I helped make.<br></br><br></br>I enjoy both sides of development: designing smooth, clean interfaces and solving tricky problems behind the scenes. Over time, I’ve learned that code isn’t just for making games—it’s a way to solve real problems for real people.<br></br><br></br>When I’m not coding, you’ll usually find me at the gym, catching up on sleep, or still in front of the computer but not coding.<br></br><br></br>My focus is on keeping things simple: building systems that are clear, easy to maintain, and strong enough to last.",
+    "skillsHeader": "My Skills"
+  },
+  "connectSection": {
+    "title": "Connect",
+    "getInTouch": {
+      "title": "Get in touch",
+      "description": "Whether you have an exciting project in mind, an amazing job opportunity, or just want to say hello, I'd be thrilled to hear from you!"
+    },
+    "onFrontendMentor": {
+      "title": "Join me on Frontend Mentor!",
+      "description": "Frontend Mentor is an excellent platform to sharpen your skills, and that's based on my experience. <femLink>Follow me</femLink> so we can share ideas and solutions, discuss various topics, and check out my work!",
+      "screenshotsAlt": {
+        "bmiCalculator": "Body Mass Index calculator",
+        "articlePreviewComponent": "Article preview component",
+        "skilledELearningLandingPage": "Responsive skilled E-learning landing page"
+      }
+    },
+    "playChess": {
+      "title": "Let's Play Chess!",
+      "description": "Do you play chess? I do too! It's what I often do in my free time because it's relaxing and it sharpens my mind. <chessLink>Add me on Chess.com</chessLink> and challenge me to a game. I'm excited to play and learn from you!"
+    }
+  },
+  "footer": {
+    "attribution": "Designed and built by Simon Camacho",
+    "starsCount": "{stars} stars",
+    "forksCount": "{forks} forks"
+  },
+  "projectsSection": {
+    "title": "Projects",
+    "explore": "Explore",
+    "projects": {
+      "finora": {
+        "title": "Finora",
+        "description": "Keep track of your money and save for your future. Finora app puts you in control of your spending. Track transactions, set budgets, and add to savings pots easily.",
+        "stackAndExplanation": "For this project, I chose Next.js 15 with the App Router as the foundation—server-side rendering, strong SEO, and edge-ready performance made it a clear fit. React 19 provided the UI layer and TypeScript ensured type safety across the codebase, catching errors before they reached production.<br></br><br></br>For the backend I used Firebase (Firestore + built-in auth) to avoid server management while keeping real-time sync and easy scalability. For the API layer I paired tRPC with TanStack Query for end-to-end typesafe calls, efficient caching, and smooth data synchronization.<br></br><br></br>The UI was built with TailwindCSS and Radix UI for fast, accessible styling, while React Hook Form and Zod handled performant form state and validation. I also added Storybook, Vitest, and Playwright to streamline component development, unit tests, and end-to-end checks—creating a reliable workflow for a modern finance app."
+      },
+      "kanban": {
+        "title": "Kanban Web App",
+        "description": "Manage and track your tasks with my full-stack MERN web app. Switch between dark and light modes to suit your style. You can sign up to save your data or use it without an account, thanks to local storage. Enjoy intuitive drag-and-drop task management.",
+        "stackAndExplanation": "For this project, I decided to use the MERN stack along with Tailwind CSS, Zustand, Radix UI, and Beautiful DnD. The MERN stack felt like a natural choice—MongoDB gave me the flexibility I needed for storing task data, Express made it easy to build a solid backend, React kept the frontend development smooth, and Node.js brought everything together seamlessly.<br></br><br></br>Since I’d already worked with Tailwind CSS and Zustand in past projects, I stuck with them here. Tailwind’s utility-first approach let me quickly build a clean and responsive interface, while Zustand kept state management simple without adding unnecessary complexity.<br></br><br></br>To round things out, I pulled in Radix UI and Beautiful DnD. Radix UI gave me accessible and consistent UI components right out of the box, and Beautiful DnD made drag-and-drop interactions effortless—exactly what I needed for a smooth Kanban experience."
+      },
+      "audiophile": {
+        "title": "Audiophile E-commerce Website",
+        "description": "This multi-page e-commerce website, built with Next.js, is fully responsive and uses local storage to retain cart items. It features a modern design and intuitive navigation for an enhanced shopping experience.",
+        "stackAndExplanation": "I first thought about using Create React App, but after reading up on best practices, I switched to Next.js. The docs were clear and easy to follow, so I felt confident jumping in—and it really did make the process smoother.<br></br><br></br>This project was also my chance to finally try Tailwind CSS. At first, I hated seeing a bunch of classes crammed into every element. It felt messy and hard to remember. But as I kept building, it started to click, and now I actually enjoy how fast it makes styling."
+      },
+      "pomodoro": {
+        "title": "FEM Pomodoro App",
+        "description": "A Pomodoro-inspired timer built as a progressive web app, enabling offline use for uninterrupted productivity. It offers customizable appearance options, including themes and fonts, and provides real-time notification alerts to keep users on track.",
+        "stackAndExplanation": "For this project, I went with HTML, Sass, and JavaScript. I chose these technologies to solidify my understanding of the core tools in web development before jumping into more complex frameworks. Now, you might wonder why I picked Sass over plain old CSS. Well, dealing with one massive CSS file can be a nightmare. Sass, on the other hand, keeps everything organized and tidy. If I need to tweak a style, I can do it without tearing my hair out searching through lines of code."
+      }
+    }
+  },
+  "experienceSection": {
+    "title": "Experience",
+    "atCompany": "@ {companyName}",
+    "experiences": {
+      "supafaya": {
+        "title": "Software Engineer",
+        "companyName": "Supafaya",
+        "date": "2024 – Present",
+        "descriptions": [
+          "Developed full-stack features for e-commerce, event ticketing, and voting platforms",
+          "Built product listings, payment integrations (Stripe, Xendit), and admin dashboards",
+          "Led CMS development for Amora e-commerce and secure voting system for The House of Collab",
+          "Integrated APIs with WordPress, ImageKit, Algolia, Firebase, and Wix CMS",
+          "Collaborated with remote teams via Zulip and coordinated with designers, developers, and PMs"
+        ]
+      },
+      "staMonica": {
+        "title": "IT Staff",
+        "companyName": "Brgy Hall Sta. Monica",
+        "date": "2020 – 2022",
+        "descriptions": [
+          "Built a resident management system with Microsoft Access and VBA",
+          "Automated report generation and streamlined data entry",
+          "Produced and maintained key community and administrative reports",
+          "Managed resident ID requests from data collection to processing",
+          "Assisted with tech support and data-driven conflict resolution",
+          "Maintained structured databases and enforced data integrity"
+        ]
+      }
+    }
+  },
+  "contactForm": {
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Juan Dela Cruz"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "juandelacruz@example.com"
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "e.g. Hello! Let's connect."
+      }
+    },
+    "submit": {
+      "button": "Send Message",
+      "loading": "Sending Message..."
+    },
+    "validation": {
+      "name": {
+        "minLength": "Name must be at least 2 characters long",
+        "maxLength": "Name must be less than 50 characters"
+      },
+      "email": {
+        "invalid": "Please enter a valid email address"
+      },
+      "message": {
+        "minLength": "Message must be at least 10 characters long",
+        "maxLength": "Message must be less than 500 characters"
+      }
+    },
+    "errors": {
+      "spamDetected": "Spam detected.",
+      "unexpectedError": "An unexpected error occurred. Please try again."
+    },
+    "messages": {
+      "fixErrors": "Please fix the errors in the form",
+      "success": "Message sent successfully!",
+      "submissionError": "An error occurred while sending your message. Please try again."
+    }
+  },
+  "projectOverviewSection": {
+    "description": "Description",
+    "webStackAndExplanation": "Web Stack and Explanation",
+    "viewCode": "View Code",
+    "previewProject": "Preview Project"
+  },
+  "projectInsightsSection": {
+    "title": "Insights"
+  },
+  "otherProjectsSection": {
+    "title": "Other Projects"
+  },
+  "messageSection": {
+    "title": "Message Me"
+  },
+  "notFound": {
+    "subtitle": "Page not found",
+    "description": "We can’t find the page you’re looking for",
+    "goHome": "Go back home"
+  },
+  "errorPage": {
+    "subtitle": "Something went wrong",
+    "description": "An unexpected error occurred on our side. Please try again in a moment.",
+    "retry": "Try again",
+    "goHome": "Go back home"
+  },
+  "chat": {
+    "info": {
+      "title": "Jack AI",
+      "description": "Personal AI assistant. Ask anything about Simon!",
+      "catchphrase": "Ask anything about Simon!"
+    },
+    "emptyState": {
+      "greeting": "Hi, I'm Jack.",
+      "description": "I'm Simon Camacho's AI assistant. How can I help you today?",
+      "jackAlt": "Jack"
+    },
+    "form": {
+      "messageLabel": "Message Jack",
+      "placeholder": "Message Jack",
+      "sendButton": "Send message"
+    },
+    "quickQuestions": {
+      "show": "Show quick questions",
+      "hide": "Hide quick questions",
+      "openOtherQuestions": "Open other questions",
+      "askAria": "Ask: {label}"
+    },
+    "otherQuestions": {
+      "title": "Other Questions",
+      "description": "Not sure what to ask? Pick a question below and I'll tell you all about Simon."
+    },
+    "conversation": {
+      "aiGenerated": "AI-generated, for reference only"
+    },
+    "errors": {
+      "400": "⚠️ Oops, something wasn't quite right with your request. Please double-check what you entered and try again!",
+      "500": "💥 Yikes! Something went wrong on our end. Don't worry—it's not you, it's me. Try again in a bit!",
+      "429": "⏳ Whoa there! You've reached the daily chat limit. I need a short break 💤. Please try again later.",
+      "toolError": "🛠️ Hmm, I couldn't load that tool right now. It might be taking a little nap 😴. Please try again in a moment!",
+      "422": "📝 Oops! Your message is too long. Please keep it under 200 characters and try again!",
+      "default": "❓ Hmm, I ran into an unexpected issue. Let's try again or come back a little later!"
+    },
+    "questionCategories": {
+      "profile": {
+        "name": "Profile",
+        "questions": [
+          "Can you tell me about Simon's background?",
+          "How did Simon get into programming?",
+          "What motivates Simon to keep learning?",
+          "Where does Simon see himself in 5 years?",
+          "What's Simon's biggest strength?",
+          "What's a weakness Simon is working on?"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "questions": [
+          "Can I see Simon's resume?",
+          "Where is Simon working now?",
+          "What kind of work does Simon do at Supafaya?",
+          "What makes Simon a valuable team member?",
+          "Why should someone hire Simon?",
+          "What's Simon's educational background?",
+          "Has Simon worked with clients or startups before?"
+        ]
+      },
+      "projects": {
+        "name": "Projects",
+        "questions": [
+          "What projects is Simon most proud of?",
+          "What is Simon's portfolio website built with?",
+          "Has Simon done any game development?"
+        ]
+      },
+      "skills": {
+        "name": "Skills",
+        "questions": [
+          "What are Simon's main skills?",
+          "Which frontend frameworks does Simon use?",
+          "Does Simon have backend experience too?",
+          "What tools does Simon use for design?",
+          "How does Simon keep his skills sharp?"
+        ]
+      },
+      "fun": {
+        "name": "Fun",
+        "questions": [
+          "What's Simon's favorite food?",
+          "Does Simon play any sports?",
+          "What's Simon's fastest Rubik's cube solve?",
+          "What's Simon's favorite quote?",
+          "What's Simon's favorite chess opening?",
+          "Does Simon have any pets?",
+          "What does Simon do for fun outside coding?"
+        ]
+      },
+      "contact": {
+        "name": "Contact & Future",
+        "questions": [
+          "What kind of projects is Simon interested in?",
+          "Where is Simon located?",
+          "Is Simon open for work or collaborations?",
+          "What's Simon's dream project?"
+        ]
+      }
+    },
+    "questions": {
+      "profile": {
+        "question": "Who is Simon Camacho? I want to know more about him.",
+        "label": "Profile"
+      },
+      "projects": {
+        "question": "What are Simon's projects?",
+        "label": "Projects"
+      },
+      "skills": {
+        "question": "What are Simon's skills?",
+        "label": "Skills"
+      },
+      "cats": {
+        "question": "Does Simon have any cats? Can you tell me about them?",
+        "label": "Cats"
+      },
+      "contact": {
+        "question": "How can I reach Simon?",
+        "label": "Contact"
+      }
+    },
+    "tools": {
+      "contact": {
+        "description": "Get in touch with Simon — whether through socials or by sending a quick message below."
+      },
+      "projects": {
+        "description": "Explore Simon's projects — each one comes with a detailed explanation, including the thought process, problem-solving approach, and in-depth description of the work. Browse through his portfolio to see not just what he built, but also how he built it."
+      },
+      "resume": {
+        "title": "Simon's Resume",
+        "fileType": "PDF",
+        "fileSize": "1.5MB",
+        "date": "Updated September 2025",
+        "openButton": "Open"
+      }
+    }
+  }
+}
