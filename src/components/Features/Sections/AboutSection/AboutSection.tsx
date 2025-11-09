@@ -22,7 +22,7 @@ const AboutSection = ({ className }: AboutSectionProps) => {
       <div className="flex flex-col gap-4 md:mb-12 md:flex-row-reverse md:items-center">
         <div
           className={cn(
-            "flex max-w-[60ch] flex-col md:flex-1 md:flex-shrink-1 md:flex-grow-4"
+            "flex max-w-[600ch] flex-col md:flex-1 md:flex-shrink-1 md:flex-grow-4"
           )}
         >
           <h3 className="subheading mb-4 md:mb-5">{t("journeyHeader")}</h3>

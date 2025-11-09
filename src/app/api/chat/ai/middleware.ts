@@ -5,7 +5,17 @@ import {
 import { Redis } from "@upstash/redis";
 import { type LanguageModelMiddleware, simulateReadableStream } from "ai";
 
-const redis = Redis.fromEnv();
+// Create a safe Redis client: if env is missing, use a no-op fallback
+const redis = (() => {
+  try {
+    return Redis.fromEnv();
+  } catch {
+    return {
+      get: async () => null,
+      set: async () => undefined,
+    } as unknown as Redis;
+  }
+})();
 
 export const cacheMiddleware: LanguageModelMiddleware = {
   wrapGenerate: async ({ doGenerate, params: { prompt } }) => {

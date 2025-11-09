@@ -5,26 +5,32 @@ export const EXPERIENCES = [
   {
     key: "supafaya",
     company: {
-      url: "https://www.linkedin.com/company/supafaya/posts/?feedView=all",
+      url: "https://www.linkedin.com/company/impetus/",
       logo: supafaya.src,
     },
     technologies: [
-      "Next.js",
-      "Tailwind CSS",
-      "NestJS",
-      "Firebase",
-      "Stripe",
-      "Xendit",
-      "Redis",
-      "Figma",
+      "ReactJS",
+      "Redux",
+      "NodeJS",
+      "GraphQL",
+      "SQL Server",
+      "D3.js",
+      "Testing Library",
+      "GitHub Actions",
     ],
   },
   {
     key: "staMonica",
     company: {
-      url: "https://www.facebook.com/profile.php?id=100063827855620",
+      url: "https://www.dxc.com/",
       logo: staMonica.src,
     },
-    technologies: ["VBA", "Microsoft Access", "Python", "SQL"],
+    technologies: [
+      "ReactJS",
+      "Express",
+      "NodeJS",
+      "SQL Server",
+      "Payment Gateways",
+    ],
   },
 ];

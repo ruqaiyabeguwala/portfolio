@@ -1,4 +1,5 @@
 import PillButton from "@/components/UI/Buttons/PillButton";
+import { SOCIALS } from "@/data/socials";
 import { cn } from "@/utils";
 import { useTranslations } from "next-intl";
 
@@ -18,7 +19,9 @@ const ResumeButton = ({ className }: ResumeButtonProps) => {
       )}
       asChild
     >
-      <a href="/simon_camacho_cv.pdf">{t("heroSection.resume")}</a>
+      <a href={SOCIALS.find((s) => s.id === "linkedin")?.href ?? "#"}>
+        {t("heroSection.resume")}
+      </a>
     </PillButton>
   );
 };

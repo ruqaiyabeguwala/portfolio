@@ -6,6 +6,6 @@ export const getContact = tool({
   description: `This tool shows ${COMMON_DATA.owner}'s contact information.`,
   inputSchema: z.object({}),
   execute: async () => {
-    return "Don’t be shy — drop a message, share your thoughts, or just say hi. He's always up for a good convo! 😉";
+    return "Reach out on LinkedIn or email for collaborations, consulting, or freelance full-stack work. Happy to discuss React, Node.js, Express, SQL Server, and API-driven apps.";
   },
 });

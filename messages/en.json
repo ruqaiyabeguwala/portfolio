@@ -1,10 +1,10 @@
 {
   "info": {
-    "name": "Simon Camacho",
-    "title": "Software Engineer",
-    "location": "Pampanga, Philippines",
-    "description": "I am a developer who enjoys learning and expanding knowledge in the field of web. I am also determined to create solutions that provide excellent online experiences. Explore my portfolio to see my growing skills and dedication to quality development.",
-    "siteName": "Simon Camacho Portfolio"
+    "name": "Ruqaiya Beguwala",
+    "title": "Full-Stack Software Developer",
+    "location": "Indore, Madhya Pradesh, India",
+    "description": "I’m a full-stack developer with 6+ years of experience in ReactJS, Node.js, and Express. I build secure, scalable applications in insurance and internal audit domains, with strong expertise in API integrations, micro frontends, and SQL Server. I care deeply about clean code, testing, and agile delivery—and I’m available for freelance work.",
+    "siteName": "Ruqaiya Beguwala Portfolio"
   },
   "containers": {
     "navBar": {
@@ -61,38 +61,27 @@
   "heroSection": {
     "contact": "Contact",
     "resume": "Resume",
-    "backgroundCarlos": "Carlos",
-    "backgroundSimon": "Simon",
+    "backgroundCarlos": "RUQAIYA",
+    "backgroundSimon": "BEGUWALA",
     "heroImageAlt": "Hero Image"
   },
   "aboutSection": {
     "title": "About Me",
     "journeyHeader": "My Journey",
-    "journey": "Hi! I’m Simon. My coding journey started in 2018 when I came across a YouTube video of someone making <tetrisLink>Tetris in C++</tetrisLink>. I was 16, and it blew my mind—you could actually build games from scratch. That moment pulled me into hours of tutorials, trying to recreate classics like Snake and Frogger.<br></br><br></br>One of my proudest moments at work was learning how to set up payments and then watching strangers actually use—and pay for—something I helped make.<br></br><br></br>I enjoy both sides of development: designing smooth, clean interfaces and solving tricky problems behind the scenes. Over time, I’ve learned that code isn’t just for making games—it’s a way to solve real problems for real people.<br></br><br></br>When I’m not coding, you’ll usually find me at the gym, catching up on sleep, or still in front of the computer but not coding.<br></br><br></br>My focus is on keeping things simple: building systems that are clear, easy to maintain, and strong enough to last.",
+    "journey": "Hi! I’m Ruqaiya—a software developer with over six years of full‑stack experience building secure, scalable applications. I’ve worked across insurance and internal audit domains, with deep focus on ReactJS, Node.js, Express, and SQL Server.<br></br><br></br>I enjoy turning complex requirements into clean, reliable systems—whether it’s micro frontends, robust API integrations, or automation that saves teams time. I care about test coverage, maintainability, and a smooth developer experience.<br></br><br></br>Beyond delivery, I’m passionate about clean code, thoughtful design, and pragmatic engineering practices. If you need a dependable full‑stack partner for your product, I’m available for freelance work.",
     "skillsHeader": "My Skills"
   },
   "connectSection": {
     "title": "Connect",
     "getInTouch": {
       "title": "Get in touch",
-      "description": "Whether you have an exciting project in mind, an amazing job opportunity, or just want to say hello, I'd be thrilled to hear from you!"
+      "description": "Have a product to build or a system to modernize? I’m available for full‑stack freelance work—React, Node.js, Express, SQL Server, and API‑driven apps. Reach out for collaborations, consulting, or long‑term engagements."
     },
-    "onFrontendMentor": {
-      "title": "Join me on Frontend Mentor!",
-      "description": "Frontend Mentor is an excellent platform to sharpen your skills, and that's based on my experience. <femLink>Follow me</femLink> so we can share ideas and solutions, discuss various topics, and check out my work!",
-      "screenshotsAlt": {
-        "bmiCalculator": "Body Mass Index calculator",
-        "articlePreviewComponent": "Article preview component",
-        "skilledELearningLandingPage": "Responsive skilled E-learning landing page"
-      }
-    },
-    "playChess": {
-      "title": "Let's Play Chess!",
-      "description": "Do you play chess? I do too! It's what I often do in my free time because it's relaxing and it sharpens my mind. <chessLink>Add me on Chess.com</chessLink> and challenge me to a game. I'm excited to play and learn from you!"
-    }
+    "onFrontendMentor": {},
+    "playChess": {}
   },
   "footer": {
-    "attribution": "Designed and built by Simon Camacho",
+    "attribution": "Designed and built by Ruqaiya Beguwala",
     "starsCount": "{stars} stars",
     "forksCount": "{forks} forks"
   },
@@ -127,28 +116,32 @@
     "atCompany": "@ {companyName}",
     "experiences": {
       "supafaya": {
-        "title": "Software Engineer",
-        "companyName": "Supafaya",
-        "date": "2024 – Present",
+        "title": "Software Developer",
+        "companyName": "Impetus Technologies",
+        "date": "March 2021 – Present",
         "descriptions": [
-          "Developed full-stack features for e-commerce, event ticketing, and voting platforms",
-          "Built product listings, payment integrations (Stripe, Xendit), and admin dashboards",
-          "Led CMS development for Amora e-commerce and secure voting system for The House of Collab",
-          "Integrated APIs with WordPress, ImageKit, Algolia, Firebase, and Wix CMS",
-          "Collaborated with remote teams via Zulip and coordinated with designers, developers, and PMs"
+          "Developed audit and risk management modules using ReactJS, Redux, NodeJS, GraphQL, and SQL Server",
+          "Built rich data visualizations with D3.js for actionable insights",
+          "Automated Excel, PowerPoint, and PDF reports using ExcelJS, PPTXGenJS, and jsPDF",
+          "Integrated Adobe Analytics and OpenTelemetry for observability and product analytics",
+          "Worked on micro frontend architecture for scalable multi-team delivery",
+          "Wrote unit tests with React Testing Library to ensure code quality",
+          "Implemented CI/CD with GitHub Actions and SonarQube for quality gates"
         ]
       },
       "staMonica": {
-        "title": "IT Staff",
-        "companyName": "Brgy Hall Sta. Monica",
-        "date": "2020 – 2022",
+        "title": "Software Developer",
+        "companyName": "DXC Technology",
+        "date": "Nov 2018 – March 2021",
         "descriptions": [
-          "Built a resident management system with Microsoft Access and VBA",
-          "Automated report generation and streamlined data entry",
-          "Produced and maintained key community and administrative reports",
-          "Managed resident ID requests from data collection to processing",
-          "Assisted with tech support and data-driven conflict resolution",
-          "Maintained structured databases and enforced data integrity"
+          "Built user-friendly insurance features using ReactJS, Express, and NodeJS",
+          "Developed secure policy management, billing, and claims modules backed by SQL Server",
+          "Integrated payment gateways for premium payments and renewals",
+          "Enabled customer self-service for quotes, policy updates, and document uploads",
+          "Connected frontend and backend systems via APIs for real-time processing",
+          "Ensured data protection and compliance with industry regulations",
+          "Added dashboards for policy status, claims tracking, and analytics",
+          "Delivered reliable code via unit tests and CI/CD pipelines"
         ]
       }
     }
@@ -224,12 +217,12 @@
   "chat": {
     "info": {
       "title": "Jack AI",
-      "description": "Personal AI assistant. Ask anything about Simon!",
-      "catchphrase": "Ask anything about Simon!"
+      "description": "Personal AI assistant. Ask anything about Ruqaiya!",
+      "catchphrase": "Ask anything about Ruqaiya!"
     },
     "emptyState": {
       "greeting": "Hi, I'm Jack.",
-      "description": "I'm Simon Camacho's AI assistant. How can I help you today?",
+      "description": "I'm Ruqaiya Beguwala's AI assistant. How can I help you today?",
       "jackAlt": "Jack"
     },
     "form": {
@@ -346,13 +339,13 @@
     },
     "tools": {
       "contact": {
-        "description": "Get in touch with Simon — whether through socials or by sending a quick message below."
+        "description": "Get in touch with Ruqaiya — through LinkedIn or email, or send a quick message below."
       },
       "projects": {
-        "description": "Explore Simon's projects — each one comes with a detailed explanation, including the thought process, problem-solving approach, and in-depth description of the work. Browse through his portfolio to see not just what he built, but also how he built it."
+        "description": "Explore Ruqaiya's work — detailed explanations, thought process, and problem-solving approaches. She will be adding projects here soon; connect for freelance collaborations in the meantime."
       },
       "resume": {
-        "title": "Simon's Resume",
+        "title": "Ruqaiya's Resume",
         "fileType": "PDF",
         "fileSize": "1.5MB",
         "date": "Updated September 2025",

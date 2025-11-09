@@ -1,4 +1,4 @@
 export const COMMON_DATA = {
-  owner: "Simon Camacho",
+  owner: "Ruqaiya Beguwala",
   twitterHandle: "@CarlosSimonCam1",
 };

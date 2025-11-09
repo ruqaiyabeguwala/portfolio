@@ -3,8 +3,6 @@ import ContentContainer from "@/components/UI/Containers/ContentContainer";
 import SectionTitle from "@/components/UI/SectionTitle";
 import { cn } from "@/utils";
 import { useTranslations } from "next-intl";
-import FrontendMentorSection from "./components/FrontendMentorSection";
-import PlayChessSection from "./components/PlayChessSection";
 
 type ConnectSectionProps = {
   className?: string;
@@ -21,8 +19,6 @@ const ConnectSection = ({ className }: ConnectSectionProps) => {
       <SectionTitle title={t("connectSection.title") as string} number={4} />
       <div className="flex flex-col gap-14 md:gap-24">
         <GetInTouch />
-        <FrontendMentorSection />
-        <PlayChessSection />
       </div>
     </ContentContainer>
   );
