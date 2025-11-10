@@ -122,7 +122,7 @@ const ProjectOverviewSection = ({
               className={cn("flex-1 text-nowrap")}
               asChild
             >
-              <Link href={codeLink} prefetch>
+              <Link href={codeLink} prefetch={false}>
                 {t("viewCode")}
               </Link>
             </PillButton>
@@ -131,7 +131,7 @@ const ProjectOverviewSection = ({
               className={cn("flex-1 text-nowrap max-sm:w-full")}
               asChild
             >
-              <Link href={previewLink} prefetch>
+              <Link href={previewLink} prefetch={false}>
                 {t("previewProject")}
               </Link>
             </PillButton>

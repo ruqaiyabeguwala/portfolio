@@ -13,7 +13,7 @@ const NotFound = async () => {
       description={t("description")}
       actions={
         <PillButton variant="primary" asChild>
-          <Link href="/" prefetch>
+          <Link href="/" prefetch={false}>
             {t("goHome")}
           </Link>
         </PillButton>

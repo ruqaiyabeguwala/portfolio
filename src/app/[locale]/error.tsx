@@ -20,7 +20,7 @@ const ErrorPage = () => {
         actions={
           <div className="flex gap-3">
             <PillButton variant="primary" asChild>
-              <Link href="/" prefetch>
+              <Link href="/" prefetch={false}>
                 {t("goHome")}
               </Link>
             </PillButton>

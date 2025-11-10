@@ -41,6 +41,8 @@ jobs:
           mkdir -p out
           # Ensure GitHub Pages serves files in directories like _next
           touch out/.nojekyll
+          # Provide SPA fallback for GitHub Pages: serve index.html for unknown routes
+          cp out/index.html out/404.html || true
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

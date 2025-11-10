@@ -29,7 +29,7 @@ const SocialButton = ({
       className={cn(className)}
       asChild
     >
-      <Link href={social.href} prefetch>
+      <Link href={social.href} prefetch={false}>
         <div>
           <social.icon
             className={cn(

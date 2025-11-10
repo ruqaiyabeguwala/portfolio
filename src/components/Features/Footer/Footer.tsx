@@ -55,7 +55,7 @@ const AboutSection = async ({ className }: AboutSectionProps) => {
       <GhostButton color="primary" asChild>
         <Link
           href="https://github.com/CarlosSimon02/www.simoncamacho.dev"
-          prefetch
+          prefetch={false}
         >
           <div className="gap grid gap-3 transition-transform group-hover:translate-y-1">
             <div>{t("attribution")}</div>

@@ -19,7 +19,7 @@ const SectionLinkButton = ({
 
   return (
     <GhostButton {...props} onClick={() => setCurrentSection(id)} asChild>
-      <Link href={href} prefetch>
+      <Link href={href} prefetch={false}>
         {children}
       </Link>
     </GhostButton>

@@ -13,7 +13,7 @@ const LogoLink = ({ className }: LogoLinkProps) => {
 
   return (
     <GhostButton className={cn(className)} asChild>
-      <Link href="/" prefetch>
+      <Link href="/" prefetch={false}>
         <div>
           <SimonCamacho className="fill-accent size-8 md:size-10" />
           <span className="sr-only">{t("navigateToHome")}</span>
