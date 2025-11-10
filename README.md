@@ -1,16 +1,7 @@
-# 🚀 Simon Camacho — Portfolio (v2) 🎨
+# 🚀 Ruqaiya Beguwala — Portfolio (v2) 🎨
 
-> 🌐 Live: **[https://simoncamacho.dev](https://simoncamacho.dev)**
 
 Welcome to the second version of my portfolio created using Next.js. 💼✨
-
-**⚠️ Note:** This is the **2nd version** of my portfolio. The first version is in the repository `https://github.com/CarlosSimon02/old.simoncamacho.dev` and was deployed at **old.simoncamacho.dev**. 🔁🕰️
-
-![portfolio](/screenshot.png)
-
-## Demo / Live 🖥️
-
-Check the live site: **[https://simoncamacho.dev](https://simoncamacho.dev)** 🌟
 
 ## Tech Stack 🧩
 
@@ -32,8 +23,8 @@ Check the live site: **[https://simoncamacho.dev](https://simoncamacho.dev)** �
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/CarlosSimon02/www.simoncamacho.dev.git
-cd www.simoncamacho.dev
+git clone https://github.com/ruqaiyabeguwala/portfolio.git
+cd portfolio
 ```
 
 2. Install dependencies with **yarn**:
@@ -88,10 +79,24 @@ This site is intended to be deployed on **Vercel**. Connect the repository to Ve
 - **Build command:** `yarn build`
 - **Output directory:** Managed by Next.js
 
+### GitHub Pages (static export)
+
+This repository is also configured to deploy a static export to **GitHub Pages**.
+
+- Static export: Next.js uses `output: 'export'` to generate the site in `out/`.
+- Base path: The workflow sets `NEXT_PUBLIC_GITHUB_PAGES_BASE_PATH` to the repo name so assets/routes resolve under `/<repo-name>/`.
+- Deployment: The workflow at `.github/workflows/deploy.yml` builds and deploys with official Pages actions.
+
+Steps:
+- Push to `main` or run the workflow via “Run workflow”.
+- In Settings → Pages, set Source to “GitHub Actions”.
+- Your site will be available at `https://<username>.github.io/<repo-name>/`.
+
+Notes:
+- Server-side features and API routes are not available on GitHub Pages; they are excluded in the static export.
+- For user/org pages at the root (`<username>.github.io`), set the base path env to empty in the workflow.
+
 ## Connect With Me
 
-- [Facebook](https://www.facebook.com/CarlosSimon02/)
-- [Linkedin](https://www.linkedin.com/in/carlossimon02/)
-- [Instagram](https://www.instagram.com/caloycowmoochi/)
-- [Frontend Mentor](https://www.frontendmentor.io/profile/CarlosSimon02)
-- carlossimon.camacho@gmail.com
+- [Linkedin](https://www.linkedin.com/in/ruqaiya-beguwala-859136121/)
+- ruqaiya.beguwala@gmail.com
