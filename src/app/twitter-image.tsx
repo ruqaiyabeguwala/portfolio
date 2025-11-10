@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+export const revalidate = 31536000;
 import Image, {
   alt as _alt,
   contentType as _contentType,

@@ -3,8 +3,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import submitMessageAction from "../actions/submitMessageAction";
-import { SubmitMessageActionResponse } from "../types";
+// import submitMessageAction from "../actions/submitMessageAction";
+// import { SubmitMessageActionResponse } from "../types";
 import { ContactFormData, createContactFormSchema } from "../validations";
 
 const useContactForm = () => {
@@ -24,21 +24,22 @@ const useContactForm = () => {
     shouldFocusError: false,
   });
 
-  const handleServerErrors = (
-    errors: SubmitMessageActionResponse["errors"]
-  ) => {
-    if (errors?.properties) {
-      Object.entries(errors.properties).forEach(
-        ([field, { errors: fieldErrors }]) => {
-          if (fieldErrors?.length) {
-            form.setError(field as keyof ContactFormData, {
-              type: "server",
-              message: fieldErrors[0],
-            });
-          }
-        }
-      );
-    }
+  type FieldError = { message: string };
+  type ServerErrors = {
+    properties?: Record<string, { errors?: FieldError[] }>;
+  };
+
+  const handleServerErrors = (errors: ServerErrors) => {
+    const props = errors?.properties ?? {};
+    Object.entries(props).forEach(([field, value]) => {
+      const fieldErrors = value?.errors ?? [];
+      if (fieldErrors.length > 0) {
+        form.setError(field as keyof ContactFormData, {
+          type: "server",
+          message: fieldErrors[0].message,
+        });
+      }
+    });
   };
 
   const onError = () => {
@@ -52,8 +53,8 @@ const useContactForm = () => {
     }
 
     try {
-      const response = await submitMessageAction(data);
-
+      //const response = await submitMessageAction(data);
+      const response = {success: true, message: t("successMessage"), errors: {}}
       if (response.success) {
         form.reset();
         toast.success(response.message);

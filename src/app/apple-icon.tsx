@@ -1,6 +1,8 @@
 import { SimonCamacho } from "@/components/UI/Icons/Logos";
 import { ImageResponse } from "next/og";
 
+export const dynamic = "force-static";
+export const revalidate = 31536000;
 export const size = {
   width: 180,
   height: 180,

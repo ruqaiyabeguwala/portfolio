@@ -1,6 +1,8 @@
 import { PROJECTS } from "@/data/projects";
 import { env } from "@/env";
 import type { MetadataRoute } from "next";
+export const dynamic = "force-static";
+export const revalidate = 31536000;
 
 const siteUrl = env.NEXT_PUBLIC_SITE_URL;
 

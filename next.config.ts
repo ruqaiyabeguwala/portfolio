@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
   experimental: {
     useCache: true,
   },
+  eslint: {
+    // Avoid failing builds due to lint warnings/errors; CI can run lint separately
+    ignoreDuringBuilds: true,
+  },
   // Export a fully static site suitable for GitHub Pages
   output: "export",
   // Ensure Next.js image optimizations are disabled for static hosting

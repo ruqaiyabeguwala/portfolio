@@ -1,5 +1,5 @@
-import submitMessageAction from "./actions/submitMessageAction";
+// import submitMessageAction from "./actions/submitMessageAction";
 
-export type SubmitMessageActionResponse = Awaited<
-  ReturnType<typeof submitMessageAction>
->;
+// export type SubmitMessageActionResponse = Awaited<
+//   ReturnType<typeof submitMessageAction>
+// >;

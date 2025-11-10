@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const revalidate = 31536000;
+import { LANGUAGES, DEFAULT_LANG_CODE } from "@/constants/languages";
 import { COMMON_DATA } from "@/data/common";
 import { getTranslations } from "next-intl/server";
 import { ImageResponse } from "next/og";
@@ -24,7 +27,7 @@ const gizmoStyle = {
 const Image = async () => {
   const [t, lexendRegular, montserratBlack, oswaldBold, heroData] =
     await Promise.all([
-      getTranslations("chat.info"),
+      getTranslations({ locale: DEFAULT_LANG_CODE, namespace: "chat.info" }),
       readFile(join(process.cwd(), "src/assets/fonts/Lexend-Regular.ttf")),
       readFile(join(process.cwd(), "src/assets/fonts/Montserrat-Black.ttf")),
       readFile(join(process.cwd(), "src/assets/fonts/Oswald-SemiBold.ttf")),
@@ -166,3 +169,6 @@ const Image = async () => {
 };
 
 export default Image;
+
+export const generateStaticParams = () =>
+  LANGUAGES.map((l) => ({ locale: l.code }));

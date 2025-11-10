@@ -1,4 +1,7 @@
+export const dynamic = "force-static";
+export const revalidate = 31536000;
 import { COMMON_DATA } from "@/data/common";
+import { DEFAULT_LANG_CODE } from "@/constants/languages";
 import { getTranslations } from "next-intl/server";
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
@@ -24,7 +27,7 @@ const gizmoStyle = {
 const Image = async () => {
   const [t, lexendRegular, montserratBlack, oswaldBold, heroData] =
     await Promise.all([
-      getTranslations("info"),
+      getTranslations({ locale: DEFAULT_LANG_CODE, namespace: "info" }),
       readFile(join(process.cwd(), "src/assets/fonts/Lexend-Regular.ttf")),
       readFile(join(process.cwd(), "src/assets/fonts/Montserrat-Black.ttf")),
       readFile(join(process.cwd(), "src/assets/fonts/Oswald-SemiBold.ttf")),

@@ -1,5 +1,7 @@
 import { env } from "@/env";
 import type { MetadataRoute } from "next";
+export const dynamic = "force-static";
+export const revalidate = 31536000;
 
 const robots = (): MetadataRoute.Robots => {
   return {

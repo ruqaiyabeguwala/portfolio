@@ -12,6 +12,10 @@ import { notFound } from "next/navigation";
 import { generateMetadata as _generateMetadata } from "./metadata";
 
 export const generateMetadata = _generateMetadata;
+export const dynamic = "force-static";
+export const revalidate = 31536000;
+export const generateStaticParams = () =>
+  PROJECTS.map((p) => ({ project: p.slug }));
 
 type ProjectPageProps = {
   params: Promise<{

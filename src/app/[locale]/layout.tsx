@@ -14,10 +14,13 @@ import { cn } from "@/utils";
 import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
 import { generateMetadata as _generateMetadata } from "../metadata";
+import { LANGUAGES } from "@/constants/languages";
 
 const fontClasses = cn(MONTSERRAT.variable, OSWALD.variable, LEXEND.variable);
 
 export const generateMetadata = _generateMetadata;
+export const generateStaticParams = () =>
+  LANGUAGES.map((l) => ({ locale: l.code }));
 
 const LocaleLayout = async ({
   children,

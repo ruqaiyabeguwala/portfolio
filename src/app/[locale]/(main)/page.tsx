@@ -7,9 +7,18 @@ import HeroSection from "@/components/Features/Sections/HeroSection";
 import ProjectsSection from "@/components/Features/Sections/ProjectsSection";
 import { NAV_ITEMS } from "@/constants/navigation";
 import { getTranslations } from "next-intl/server";
+import { Locale } from "@/types/locale";
 
-const HomePage = async () => {
-  const t = await getTranslations();
+export const dynamic = "force-static";
+export const revalidate = 31536000;
+
+const HomePage = async ({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) => {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
   const homePageSections = NAV_ITEMS.map((item) => ({
     id: item.id,
     title: t(`containers.navBar.links.${item.id}`),
